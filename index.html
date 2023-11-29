@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food Website</title>
+    <link rel="stylesheet" href="foodweb.css">
+
+   
+
+    <!-- <link  href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200..900" -->
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+    <div  class="container">
+        <nav>
+            <div class="logo">
+                <h1>Food HUB</h1>
+            </div>
+             
+                <div>
+                <ul >
+                    <li><a href="" class="active" id="homenav">Home</a></li>
+                    <li><a href="#food" id="foodnav" >Food</a></li>
+                    <li><a href="#blog" id="blognav">Blog</a></li>
+                    <li><a href="#review" id="reviewnav">Customer</a></li>
+                    <li><a href="#contact" id="contactnav">Contact</a></li>
+            
+            
+                </ul>
+                </div>
+
+
+                <div class="icon">
+            <i onclick="vernav()" value="toggle" class="fa-solid fa-bars" id="navbar" ></i>
+              
+            <div class="input">
+             <input type="text" value="" id="inp" placeholder="" onkeyup="myFun()">
+                    <!-- <i class="fa-solid fa-magnifying-glass "></i> -->
+                    <img src="./image/search.png" alt="upload img" >
+
+              </div>
+
+             <i onclick="loginicn()"  value="toggle" class="fa-solid fa-user "  ></i>
+
+
+
+                    
+
+          
+            </div>
+        </nav>
+
+
+<!-- login -->
+
+        <div id="loginid" >
+            <h2>Log in</h2>
+            <form >
+            <input type="name" placeholder="Enter Your Name" id="myemail" >
+            <input type="password" placeholder="Enter Password" id="mypassword" >
+            <button type="submit"  id="loginform">Log in</button>
+            </form>
+        
+
+        </div>
+
+        
+
+        
+
+
+     
+        <!-- main page -->
+
+        <div class="main" id="main">
+            <div class="text">
+                <h1>Simple & Tasty Recipes</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut reprehenderit, perspiciatis officia rem dignissimos quaerat provident soluta hic? Sint nobis ut impedit blanditiis veritatis, aut quod veniam. Expedita, magnam tenetur</p>
+                <button>Explore More</button>
+            </div >
+            <img src="./image/burger_img.png" alt="">
+        </div>
+
+
+        <div id="verticalnav">
+            <ul>
+                <li><a href="" class="active" id="homenav">Home</a></li>
+                <li><a href="#food" id="foodnav">Food</a></li>
+                <li><a href="#blog" id="blognav">Blog</a></li>
+                <li><a href="#review" id="reviewnav">Customer</a></li>
+                <li><a href="#contact" id="contactnav">Contact</a></li>
+        
+        
+            </ul>
+        </div>
+
+        <!-- Food Cards -->
+        <table>
+            <tr>
+                <td>
+                    <div class="head" id="food">
+                        <h1>Our <span>Food</span></h1>
+                    </div>
+                    <div class="crd" >
+                        <div class="card">
+                            <img src="./image/biryani.png" alt="">
+                            <h2>299 Ruppes Only</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur libero deleniti </p>
+                            <button class="orderbtn">Order Now</button>
+                        </div>
+
+                        <div class="card">
+                            <img src="./image/bf1.png" alt="">
+                            <h2>299 Ruppes Only</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur libero deleniti </p>
+                            <button class="orderbtn">Order Now</button>
+                        </div>
+
+                        <div class="card">
+                            <img src="./image/noodles.png" alt="">
+                            <h2>299 Ruppes Only</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur libero deleniti </p>
+
+                            <button class="orderbtn">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="crd">
+                        <div class="card">
+                            <img src="./image/bf2.png" alt="">
+                            <h2>299 Ruppes Only</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur libero deleniti </p>
+                            <button class="orderbtn">Order Now</button>
+                        </div>
+                    
+                        <div class="card">
+                            <img src="./image/cake.png" alt="">
+                            <h2>299 Ruppes Only</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur libero deleniti </p>
+                            <button class="orderbtn">Order Now</button>
+                        </div>
+                    
+                        <div class="card">
+                            <img src="./image/thali2.png" alt="">
+                            <h2>299 Ruppes Only</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur libero deleniti </p>
+                            <button class="orderbtn">Order Now</button>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <div class="head" id="blog">
+                        <h1>Our <span>Blogs</span></h1>
+                    </div>
+                    <div class="crd blogcrd" >
+                        <div class="blog" >
+                            <img src="./image/thali2.png" alt="">
+                            <h2>Fact About Indian Food</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur libero deleniti </p><br><br>
+                            <a href="https://www.littleindiaofdenver.com/" target="_blank">Read More</a>
+                        </div>
+                    
+                        <div class="blog">
+                            <img src="./image//burger2.webp" alt="">
+                            <h2>Diffrent Type of Burger</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur libero deleniti </p><br><br>
+                            <a href="https://www.finedininglovers.com/" target="_blank">Read More</a>
+                        </div>
+                    
+                        <div class="blog">
+                            <img src="./image//ckicken.jpg" alt="">
+                            <h2>Delicious Checken Recipe</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur libero deleniti </p><br><br>
+                            <a href="https://themodernproper.com/" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                              
+            </tr>
+        </table>
+        <!-- Customer Review -->
+       
+        
+        <div class="head " id="review" >
+            <h1>Customer <span>Review</span></h1>
+        </div>
+       
+        <div class="review" >
+           
+            <div class="customer"  id="reviews" >
+                <img src="./image/cust4.png" alt=""><br>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, deleniti dolores.<br> Non veniam maxime suscipit?</p>
+               
+            </div>
+              
+         
+            <div class="customer">
+                <img src="./image/cust2.png" alt=""><br>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, deleniti dolores. Non veniam maxime suscipit?
+                </p>
+            
+            </div>
+
+            <div class="customer">
+                <img src="./image/cust3.png" alt=""><br>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, deleniti dolores. Non veniam maxime suscipit?
+                </p>
+            
+            </div>
+            <div class="customer">
+                <img src="./image/cust1.png" alt=""><br>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, deleniti dolores. Non veniam maxime suscipit?
+                </p>
+            
+            </div>
+
+           
+        
+        </div>
+
+        <!-- contact us  -->
+        <div class="head" id="contact" >
+            <h1>Contact  <span>Us</span></h1>
+        </div>
+
+          <div class="connectus" >
+            <div class="imgcontact">
+                <img src="./image/kebab.png " alt="" >
+            </div>
+
+           
+
+            <form id="contactForm" method="POST" class="fixform" name="contact-form">
+                <div class="form-group">
+                    <input type="text" id="conname" name="name" required class="subip"  placeholder="Enter Your Name" autocomplete="on">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="conemail" name="email" required class="subip" placeholder="Enter Your Email" autocomplete="on">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="connumber" name="phone" required class="subip" placeholder="Phone no." autocomplete="on">
+                </div>
+                <div class="form-group">
+                    <textarea id="conmessage" name="message" required class="msgip" placeholder="How can we help you ?"></textarea>
+                </div>
+
+
+               
+                <button type="submit"  class="submitbtn"  >Submit</button>
+            </form>
+          </div> 
+      
+           
+         
+
+
+
+        
+        <!-- footer -->
+
+        <div class="footer">
+            <div class="txt">
+                <h2>About US</h2>
+                <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Odio, quibusdam veniam.</p>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Food</p> 
+             </div>
+
+            <div class="txt">
+                <h2>About US</h2>
+                <p>Product</p>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Food</p>
+            </div>
+
+            <div class="txt">
+                <h2>About US</h2>
+                <p>Near</p>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Food</p>
+            </div>
+
+            <div class="txt">
+                <h2>About US</h2>
+                <p>Website</p>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Food</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>All Right @Sapna Reserved</p>
+
+        </div>
+
+        
+
+    </div>
+
+    
+
+    <script src="foodweb.js"></script>
+
+
+    
+</body>
+</html>
